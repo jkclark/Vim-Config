@@ -16,7 +16,7 @@ cp ./colors/* ~/.vim/colors/
 git clone https://github.com/gmarik/Vundle.vim ~/.vim/bundle/Vundle.vim
 
 # Copy vimrc over to $HOME
-cat ./josh_rc.vim > ~/.vimrc
+cat ./.vimrc > ~/.vimrc
 
 # Install plugins
 vim -c 'PluginInstall' -c 'qa!'
