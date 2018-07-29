@@ -109,6 +109,7 @@ nnoremap <leader>, :set cursorline!<cr>
 inoremap jj <Esc>
 
 " enter inserts lines without leaving insert mode
+nnoremap <S-CR> O<Esc>
 nnoremap <CR> o<Esc>
 
 " quick yank to EOL
@@ -178,6 +179,12 @@ let g:airline_theme='light'
 " Plugin 'powerline/fonts'
 let g:airline_powerline_fonts=1
 Plugin 'tpope/vim-fugitive'  " only added for git branch in airline
+
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-n>"
+let g:UltiSnipsJumpBackwardTrigger="<c-p>"
 
 " All plugins must be added before the following line
 call vundle#end()			" required for Vundle
