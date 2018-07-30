@@ -6,7 +6,7 @@ filetype off							" required for Vundle
 " let mapleader=","
 " let maplocalleader="\\"
 
-set showmode							" always show mode
+set noshowmode							" always show mode
 set nowrap								" don't wrap lines
 set tabstop=4							" a tab is four spaces
 set softtabstop=4						" when hitting <BS>, pretend like removing a tab, even if spaces
@@ -31,9 +31,10 @@ set gdefault							" search/replace "globally" (on a line) by default
 set listchars=tab:»\ ,trail:·,extends:→,nbsp:· ",eol:↲	also this option for tab:▸
 set list							  " don't show invisible characters by default,
 										" but it is enabled for some file types (see later)
-set pastetoggle=<F2>					" when in insert mode, press <F2> to go to
+" set pastetoggle=<F2>					" when in insert mode, press <F2> to go to
 										"	 paste mode, where you can paste mass data
 										"	 that won't be autoindented
+" set nopaste								" doing this for jedi-vim
 set mouse=a								" enable using the mouse if terminal emulator
 										"	 supports it (xterm does)
 set fileformats="unix,dos,mac"
@@ -69,7 +70,7 @@ set foldenable							" enable folding
 set foldmethod=indent
 set foldlevelstart=99					" start out with everything unfolded
 
-set laststatus=2						" always show a status line
+set laststatus=0						" always show a status line USED TO BE 2
 set cmdheight=2							" use a status bar that is 2 rows high
 
 set history=1000						" remember more history
@@ -99,7 +100,7 @@ set encoding=utf-8
 set nomodeline							" disable mode lines (security measure)
 set ruler								" show line and column in status bar
 set colorcolumn=80						" ruler at column 80
-set nocursorline							" don't highlight current line
+set nocursorline						" don't highlight current line
 " toggle highlighting the cursor line
 nnoremap <leader>, :set cursorline!<cr>
 " ### End Settings ###
@@ -178,7 +179,7 @@ Plugin 'vim-airline/vim-airline-themes'
 let g:airline_theme='light'
 " Plugin 'powerline/fonts'
 let g:airline_powerline_fonts=1
-Plugin 'tpope/vim-fugitive'  " only added for git branch in airline
+Plugin 'tpope/vim-fugitive'				" only added for git branch in airline
 
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
@@ -186,38 +187,15 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-n>"
 let g:UltiSnipsJumpBackwardTrigger="<c-p>"
 
+Plugin 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+" autocmd BufWritePre *.go call go#lint#Run() " run :GoLint on save
+
+" Plugin 'Shougo/echodoc' " I wish I could but I can't figure out how to make this work
+" let g:echodoc_enable_at_startup=1
+
+" Plugin 'davidhalter/jedi-vim'			" Enable for Python
+
 " All plugins must be added before the following line
 call vundle#end()			" required for Vundle
 filetype plugin indent on	" required for Vundle
 " ### End Plugins ###
-
-" ### Functions ###
-function! PulseCursorLine()
-	setlocal cursorline
-
-	redir => old_hi
-		silent execute 'hi CursorLine'
-	redir END
-	let old_hi = split(old_hi, '\n')[0]
-	let old_hi = substitute(old_hi, 'xxx', '', '')
-
-	hi CursorLine guibg=#3a3a3a
-	redraw
-	sleep 7m
-
-	hi CursorLine guibg=#4a4a4a
-	redraw
-	sleep 5m
-
-	hi CursorLine guibg=#3a3a3a
-	redraw
-	sleep 7m
-
-	hi CursorLine guibg=#2a2a2a
-	redraw
-	sleep 5m
-
-	execute 'hi ' . old_hi
-	setlocal nocursorline
-endfunction
-" ### End Functions ###
