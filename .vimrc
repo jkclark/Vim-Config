@@ -31,10 +31,9 @@ set gdefault							" search/replace "globally" (on a line) by default
 set listchars=tab:»\ ,trail:·,extends:→,nbsp:· ",eol:↲	also this option for tab:▸
 set list							  " don't show invisible characters by default,
 										" but it is enabled for some file types (see later)
-" set pastetoggle=<F2>					" when in insert mode, press <F2> to go to
+set pastetoggle=<F2>					" when in insert mode, press <F2> to go to
 										"	 paste mode, where you can paste mass data
 										"	 that won't be autoindented
-" set nopaste								" doing this for jedi-vim
 set mouse=a								" enable using the mouse if terminal emulator
 										"	 supports it (xterm does)
 set fileformats="unix,dos,mac"
@@ -70,7 +69,7 @@ set foldenable							" enable folding
 set foldmethod=indent
 set foldlevelstart=99					" start out with everything unfolded
 
-set laststatus=0						" always show a status line USED TO BE 2
+set laststatus=2						" always show a status line
 set cmdheight=2							" use a status bar that is 2 rows high
 
 set history=1000						" remember more history
@@ -177,9 +176,15 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 let g:airline_theme='light'
-" Plugin 'powerline/fonts'
+
 let g:airline_powerline_fonts=1
-Plugin 'tpope/vim-fugitive'				" only added for git branch in airline
+let g:airline#extensions#syntastic#enabled=1	" allow airline to work with syntastic
+let airline#extensions#syntastic#error_symbol='E:'
+let airline#extensions#syntastic#stl_format_err = '%E{[%e(#%fe)]}'
+let airline#extensions#syntastic#warning_symbol = 'W:'
+let airline#extensions#syntastic#stl_format_warn = '%W{[%w(#%fw)]}'
+
+Plugin 'tpope/vim-fugitive'				" git wrapper
 
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
@@ -194,6 +199,18 @@ Plugin 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " let g:echodoc_enable_at_startup=1
 
 " Plugin 'davidhalter/jedi-vim'			" Enable for Python
+
+" # Syntastic #
+Plugin 'vim-syntastic/syntastic'
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+let g:syntastic_enable_signs = 1
+
+let g:syntastic_go_checkers=["gofmt", "go", "golint", "govet"]
+" # End Syntastic #
 
 " All plugins must be added before the following line
 call vundle#end()			" required for Vundle
