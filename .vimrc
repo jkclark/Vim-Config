@@ -137,7 +137,6 @@ noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 
 nmap ( <Nop>
-
 " ### End Mappings ###
 
 " ### Plugins ###
