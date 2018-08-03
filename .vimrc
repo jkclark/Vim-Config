@@ -136,6 +136,8 @@ noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 
+nmap ( <Nop>
+
 " ### End Mappings ###
 
 " ### Plugins ###
@@ -156,6 +158,10 @@ let g:NERDCompactSexyComs=1
 let g:NERDTrimTrailingWhitespace=1
 
 Plugin 'jiangmiao/auto-pairs'
+" disable fast wrap
+let g:AutoPairsShortcutFastWrap=""
+
+Plugin 'tpope/vim-surround'
 
 Plugin 'ervandew/supertab'
 
