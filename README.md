@@ -13,11 +13,16 @@ out what was goign on. Here's what's happening:
 5. Copy the contents of .vimrc (the configuration file where a lot of the magic happens) its home (~/.vim).
 6. Open Vim, call ':PluginInstall', which installs all of our plugins, then quit Vim.
 7. Install fonts that have been patched and adjusted to work with the "Powerline" plugin.
-   + At this point we follow the instructs from the Powerline plugin.
+   + At this point we follow the instructions from the Powerline plugin.
 8. Lastly, we remind ourselves that the fonts _are_ installed, but the symbols won't appear until
 	we select them in whatever terminal we are using.
 
+## colors
+I'm currently happy with Brogrammer, a colorscheme I was using when I coded with Sublime
+Text 2. I found [vim-brogrammer-theme] and modified it slightly. Here are the changes I've made:
++ Comments changed from 
 
+[vim-brogrammer-theme]: https://github.com/marciomazza/vim-brogrammer-theme
 ## .vimrc
 ### Layout
 My .vimrc follows this basic layout:
@@ -31,3 +36,6 @@ My .vimrc follows this basic layout:
 
 ### Plugins
 
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
+- ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `#c5f015`
+- ![#1589F0](https://placehold.it/15/1589F0/000000?text=+) `#1589F0`
