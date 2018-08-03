@@ -4,7 +4,7 @@ A script to set up my Vim environment, along with necessary files
 ## install.sh
 Even with comments, sometimes it's hard to understand what's going on in bash
 scripts, especially if you're new to Vim. I know I had to spend some time figuring
-out what was goign on. Here's what's happening:
+out what was goign on. Here's what's happening: <br/>
 	1. Set a flag to force the script to exit immediately if it encounters an error.
 	2. Create directories where files are going to be installed.
 	3. Copy the colorscheme files (colors/\*.vim) to the colors directory we just made (~/.vim/colors).
