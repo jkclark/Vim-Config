@@ -6,7 +6,7 @@ filetype off							" required for Vundle
 " let mapleader=","
 " let maplocalleader="\\"
 
-set noshowmode							" always show mode
+set noshowmode							" never show mode
 set nowrap								" don't wrap lines
 set tabstop=4							" a tab is four spaces
 set softtabstop=4						" when hitting <BS>, pretend like removing a tab, even if spaces
@@ -29,7 +29,7 @@ set hlsearch							" highlight search terms
 set incsearch							" show search matches as you type
 set gdefault							" search/replace "globally" (on a line) by default
 set listchars=tab:»\ ,trail:·,extends:→,nbsp:· ",eol:↲	also this option for tab:▸
-set list							  " don't show invisible characters by default,
+set list								" show invisible characters by default,
 										" but it is enabled for some file types (see later)
 set pastetoggle=<F2>					" when in insert mode, press <F2> to go to
 										"	 paste mode, where you can paste mass data
@@ -136,7 +136,6 @@ noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 
-nmap ( <Nop>
 " ### End Mappings ###
 
 " ### Plugins ###

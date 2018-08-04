@@ -15,7 +15,7 @@ out what was goign on. Here's what's happening:
 7. Install fonts that have been patched and adjusted to work with the "Powerline" plugin.
    + At this point we follow the instructions from the Powerline plugin.
 8. Lastly, we remind ourselves that the fonts _are_ installed, but the symbols won't appear until
-	we select them in whatever terminal we are using.
+	we select one in whatever terminal we are using.
 
 ## colors
 I'm currently happy with Brogrammer, a colorscheme I was using when I coded with Sublime
@@ -40,11 +40,37 @@ My .vimrc follows this basic layout:
 3. [Plugins](#plugins)
 
 ### Settings
+Many of the settings in .vimrc were taken from [nvie's .vimrc](https://github.com/nvie/vimrc/blob/master/vimrc).
+You can look up any individual setting and find out more about what it does. Some settings worth mentioning:
++ `set list`: Show invisible characters by default. Some people might not like this. I find that it makes me
+pay more attention to indenting and style than I normally would. It also helps me compare indentation levels
+of lines that are far apart.
++ `set cmdheight=2`: Show a status bar that is 2 lines high. This way, nothing gets inadvertently covered up
+by vim-airline.
 
 ### Mappings
 
 ### Plugins
++ [Vundle][Vundle] (short for _Vim Bundle_)is a package manager for Vim. There are many options for plugin managers, this is
+just the one that I prefer.
++ [Vim colorschemes][Vim colorschemes] is a one stop shop for colorschemes for Vim.
++ [NERD Commenter][NERD Commenter] supercharges your commenting abilities.
++ [Auto Pairs][Auto Pairs] lets you insert brackets, parentheses, etc. in pairs.
++ [surround.vim][Surround.vim] makes "surrounding" blocks of code with brackets, parens, etc. easy.
++ [Supertab][Supertab] allows you to use <Tab> for all your insertion needs.
++ [NERD Tree][NERD Tree] is a tree explorer plugin for Vim.
++ [vim-gitgutter][vim-gitgutter] shows a git diff in the sign column of Vim.
++ [vim-airline][vim-airline] draws a nice statusbar at the bottom of each Vim window.
++ [vim-airline-themes][vim-airline-themes] are themes for vim-airline.
++ [fugitive.vim][fugitive.vim] is a Git wrapper for Vim.
 
-- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
-- ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `#c5f015`
-- ![#1589F0](https://placehold.it/15/1589F0/000000?text=+) `#1589F0`
+[Vundle](https://github.com/VundleVim/Vundle.vim)
+[Vim colorschemes](https://github.com/flazz/vim-colorschemes)
+[NERD Commenter](https://github.com/scrooloose/nerdcommenter)
+[Auto Pairs](https://github.com/jiangmiao/auto-pairs)
+[surround.vim](https://github.com/tpope/vim-surround)
+[Supertab](https://github.com/ervandew/supertab)
+[NERD Tree](https://github.com/scrooloose/nerdtree)
+[vim-gitgutter](https://github.com/airblade/vim-gitgutter)
+[vim-airline](https://github.com/vim-airline/vim-airline)
+[fugitive.vim](https://github.com/tpope/vim-fugitive)
