@@ -37,7 +37,7 @@ Text 2. I found [vim-brogrammer-theme] and modified it slightly. Here are the ch
 My .vimrc follows this basic layout:
 1. [Settings](https://github.com/jkclark/Vim-Setup/blob/master/.vimrc#L5)
 2. [Mappings](https://github.com/jkclark/Vim-Setup/blob/master/.vimrc#L107)
-3. [Plugins](#https://github.com/jkclark/Vim-Setup/blob/master/.vimrc#L141)
+3. [Plugins](https://github.com/jkclark/Vim-Setup/blob/master/.vimrc#L141)
 
 ### Settings
 Many of the settings in .vimrc were taken from [nvie's .vimrc](https://github.com/nvie/vimrc/blob/master/vimrc).
