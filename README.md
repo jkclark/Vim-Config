@@ -63,6 +63,9 @@ just the one that I prefer.
 + [vim-airline][vim-airline] draws a nice statusbar at the bottom of each Vim window.
 + [vim-airline-themes][vim-airline-themes] are themes for vim-airline.
 + [fugitive.vim][fugitive.vim] is a Git wrapper for Vim.
++ [UltiSnips][UltiSnips] is a fast code snippet plugin for Vim.
++ [vim-go][vim-go] is a Go development plugin for Vim.
++ [Syntastic][Syntastic] is a code syntax checking plugin for Vim.
 
 [Vundle](https://github.com/VundleVim/Vundle.vim)
 [Vim colorschemes](https://github.com/flazz/vim-colorschemes)
@@ -74,3 +77,6 @@ just the one that I prefer.
 [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 [vim-airline](https://github.com/vim-airline/vim-airline)
 [fugitive.vim](https://github.com/tpope/vim-fugitive)
+[UltiSnips](https://github.com/SirVer/ultisnips)
+[vim-go](https://github.com/fatih/vim-go)
+[Syntastic](https://github.com/vim-syntastic/syntastic)
