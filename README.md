@@ -76,6 +76,7 @@ just the one that I prefer.
 [NERD Tree]: https://github.com/scrooloose/nerdtree
 [vim-gitgutter]: https://github.com/airblade/vim-gitgutter
 [vim-airline]: https://github.com/vim-airline/vim-airline
+[vim-airline-themes]: https://github.com/vim-airline/vim-airline-themes
 [fugitive.vim]: https://github.com/tpope/vim-fugitive
 [UltiSnips]: https://github.com/SirVer/ultisnips
 [vim-go]: https://github.com/fatih/vim-go
