@@ -4,7 +4,8 @@ filetype off							" required for Vundle
 
 " ### Settings ###
 set noshowmode							" never show mode
-set nowrap							" don't wrap lines set tabstop=4							" a tab is four spaces
+set nowrap							" don't wrap lines 
+set tabstop=4							" a tab is four spaces
 set softtabstop=4						" when hitting <BS>, pretend like removing a tab, even if spaces
 set noexpandtab							" use tabs not spaces
 set shiftwidth=4						" number of spaces to use for autoindenting
@@ -35,10 +36,6 @@ set mouse=a							" enable using the mouse if terminal emulator
 set fileformats="unix,dos,mac"
 set formatoptions+=1						" When wrapping paragraphs, don't end lines
 								"	 with 1-letter words (looks stupid)
-
-"set nrformats=							 " make <C-a> and <C-x> play well with
-								"	 zero-padded numbers (i.e. don't consider
-								"	 them octal or hex)
 
 set shortmess+=I						" hide the launch screen
 set clipboard=unnamed						" normal OS clipboard interaction
