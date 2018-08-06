@@ -67,16 +67,16 @@ just the one that I prefer.
 + [vim-go][vim-go] is a Go development plugin for Vim.
 + [Syntastic][Syntastic] is a code syntax checking plugin for Vim.
 
-[Vundle](https://github.com/VundleVim/Vundle.vim)
-[Vim colorschemes](https://github.com/flazz/vim-colorschemes)
-[NERD Commenter](https://github.com/scrooloose/nerdcommenter)
-[Auto Pairs](https://github.com/jiangmiao/auto-pairs)
-[surround.vim](https://github.com/tpope/vim-surround)
-[Supertab](https://github.com/ervandew/supertab)
-[NERD Tree](https://github.com/scrooloose/nerdtree)
-[vim-gitgutter](https://github.com/airblade/vim-gitgutter)
-[vim-airline](https://github.com/vim-airline/vim-airline)
-[fugitive.vim](https://github.com/tpope/vim-fugitive)
-[UltiSnips](https://github.com/SirVer/ultisnips)
-[vim-go](https://github.com/fatih/vim-go)
-[Syntastic](https://github.com/vim-syntastic/syntastic)
+[Vundle]: https://github.com/VundleVim/Vundle.vim
+[Vim colorschemes]: https://github.com/flazz/vim-colorschemes
+[NERD Commenter]: https://github.com/scrooloose/nerdcommenter
+[Auto Pairs]: https://github.com/jiangmiao/auto-pairs
+[surround.vim]: https://github.com/tpope/vim-surround
+[Supertab]: https://github.com/ervandew/supertab
+[NERD Tree]: https://github.com/scrooloose/nerdtree
+[vim-gitgutter]: https://github.com/airblade/vim-gitgutter
+[vim-airline]: https://github.com/vim-airline/vim-airline
+[fugitive.vim]: https://github.com/tpope/vim-fugitive
+[UltiSnips]: https://github.com/SirVer/ultisnips
+[vim-go]: https://github.com/fatih/vim-go
+[Syntastic]: https://github.com/vim-syntastic/syntastic
