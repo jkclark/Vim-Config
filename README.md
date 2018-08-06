@@ -1,5 +1,5 @@
-# Vim Setup
-A script to set up my Vim environment, along with necessary files
+# Vim Config
+A script to configure my Vim environment, along with necessary files
 
 ## install.sh
 Even with comments, sometimes it's hard to understand what's going on in bash
