@@ -2,8 +2,10 @@ set nocompatible
 syntax on
 filetype off							" required for Vundle
 
-" ### Settings ###
+""" The comments may not look like they line up. They are lined up on column
+""" 41 in my terminal when I load this file up in Vim. Not sure why this happens.
 
+" ### Settings ###
 set noshowmode							" never show mode
 set nowrap								" don't wrap lines
 set tabstop=4							" a tab is four spaces
@@ -36,10 +38,6 @@ set mouse=a								" enable using the mouse if terminal emulator
 set fileformats="unix,dos,mac"
 set formatoptions+=1					" When wrapping paragraphs, don't end lines
 										"	 with 1-letter words (looks stupid)
-
-"set nrformats=							 " make <C-a> and <C-x> play well with
-										"	 zero-padded numbers (i.e. don't consider
-										"	 them octal or hex)
 
 set shortmess+=I						" hide the launch screen
 set clipboard=unnamed					" normal OS clipboard interaction
