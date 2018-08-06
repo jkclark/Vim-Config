@@ -7,8 +7,7 @@ filetype off							" required for Vundle
 " let maplocalleader="\\"
 
 set noshowmode							" never show mode
-set nowrap								" don't wrap lines
-set tabstop=4							" a tab is four spaces
+set nowrap								" don't wrap lines set tabstop=4							" a tab is four spaces
 set softtabstop=4						" when hitting <BS>, pretend like removing a tab, even if spaces
 set noexpandtab							" use tabs not spaces
 set shiftwidth=4						" number of spaces to use for autoindenting

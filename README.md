@@ -10,7 +10,7 @@ out what was goign on. Here's what's happening:
 2. Create directories where files are going to be installed.
 3. Copy the colorscheme files (colors/\*.vim) to the colors directory we just made (~/.vim/colors).
 4. Install Vundle, the Vim package manager I like to use. We clone (copy) it from Github.
-5. Copy the contents of .vimrc (the configuration file where a lot of the magic happens) its home (~/.vim).
+5. Copy the contents of .vimrc (the configuration file where a lot of the magic happens) to its home (~/.vim).
 6. Open Vim, call ':PluginInstall', which installs all of our plugins, then quit Vim.
 7. Install fonts that have been patched and adjusted to work with the "Powerline" plugin.
    + At this point we follow the instructions from the Powerline plugin.
@@ -19,7 +19,7 @@ out what was goign on. Here's what's happening:
 
 ## colors
 I'm currently happy with Brogrammer, a colorscheme I was using when I coded with Sublime
-Text 2. I found [vim-brogrammer-theme] and modified it slightly. Here are the changes I've made:
+Text 2. I found [vim-brogrammer-theme] and modified it slightly. Here are the changes I made:
 + Comment changed from ![#626262][comment-original] to ![#9e9e9e][comment-new]
 + NonText changed from ![#0000ff][nontext-original] to ![#ff0087][nontext-new]
 + SpecialKey changed from ![#0000ff][specialkey-original] to ![#0087ff][specialkey-new]
@@ -49,9 +49,10 @@ of lines that are far apart.
 by vim-airline.
 
 ### Mappings
+The mappings are pretty self-explanatory. Most of them have comments explaining what they do.
 
 ### Plugins
-+ [Vundle][Vundle] (short for _Vim Bundle_)is a package manager for Vim. There are many options for plugin managers, this is
++ [Vundle][Vundle] (short for _Vim Bundle_) is a package manager for Vim. There are many options for plugin managers, this is
 just the one that I prefer.
 + [Vim colorschemes][Vim colorschemes] is a one stop shop for colorschemes for Vim.
 + [NERD Commenter][NERD Commenter] supercharges your commenting abilities.
