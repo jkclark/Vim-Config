@@ -97,6 +97,10 @@ set colorcolumn=80						" ruler at column 80
 set nocursorline						" don't highlight current line
 " toggle highlighting the cursor line
 nnoremap <leader>, :set cursorline!<cr>
+
+" wrap lines for txt and md files specifically
+autocmd BufRead,BufNewFile *.txt setlocal wrap linebreak
+autocmd BufRead,BufNewFile *.md setlocal wrap linebreak
 " ### End Settings ###
 
 " ### Mappings ###
