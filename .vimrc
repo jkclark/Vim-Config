@@ -201,7 +201,7 @@ Plugin 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Plugin 'Shougo/echodoc' " I wish I could but I can't figure out how to make this work
 " let g:echodoc_enable_at_startup=1
 
-" Plugin 'davidhalter/jedi-vim'			" Enable for Python
+Plugin 'davidhalter/jedi-vim'			" Enable for Python
 
 " # Syntastic #
 Plugin 'vim-syntastic/syntastic'
@@ -213,6 +213,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_enable_signs = 1
 
 let g:syntastic_go_checkers=["gofmt", "go", "golint", "govet"]
+let g:syntastic_python_checkers=['flake8']
 " # End Syntastic #
 
 " All plugins must be added before the following line

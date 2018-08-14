@@ -23,6 +23,7 @@ Text 2. I found [vim-brogrammer-theme] and modified it slightly. Here are the ch
 + Comment changed from ![#626262][comment-original] to ![#9e9e9e][comment-new]
 + NonText changed from ![#0000ff][nontext-original] to ![#ff0087][nontext-new]
 + SpecialKey changed from ![#0000ff][specialkey-original] to ![#0087ff][specialkey-new]
++ Number changed from ![5f5fd7][number-original] to ![ffaf5f][number-new]
 
 [vim-brogrammer-theme]: https://github.com/marciomazza/vim-brogrammer-theme
 [comment-original]: https://placehold.it/15/626262/000000?text=+ "#626262"
@@ -31,6 +32,8 @@ Text 2. I found [vim-brogrammer-theme] and modified it slightly. Here are the ch
 [nontext-new]: https://placehold.it/15/ff0087/000000?text=+ "#ff0087"
 [specialkey-original]: https://placehold.it/15/0000ff/000000?text=+ "#0000ff"
 [specialkey-new]: https://placehold.it/15/0087ff/000000?text=+ "#0087ff"
+[number-original]: https://placehold.it/15/5f5fd7/?text=+ "#5f5fd7"
+[number-new]: https://placehold.it/15/ffaf5f/?text=+ "#ffaf5f"
 
 ## .vimrc
 ### Layout
