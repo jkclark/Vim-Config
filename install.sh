@@ -4,10 +4,16 @@
 # Exit immediately if a command exits with a non-zero status
 set -e
 
-# Make necessary directories
-mkdir ~/.vim
-mkdir ~/.vim/bundle
-mkdir ~/.vim/colors
+# Make necessary directories (only if they do not exist already)
+if [ ! -d "~/.vim" ]; then
+	mkdir ~/.vim
+fi
+if [ ! -d "/.vim/bundle" ]; then
+	mkdir ~/.vim/bundle
+fi
+if [ -d "/.vim/colors" ]; then
+	mkdir ~/.vim/colors
+fi
 
 # Move colorschemes
 cp ./colors/* ~/.vim/colors/
@@ -33,5 +39,5 @@ rm -rf fonts
 # Symbols still won't work, need to select font
 echo '#######################################################
 Note: Fonts have been installed, but you need to select
-      one for symbols to appear properly in airline
+	  one for symbols to appear properly in airline
 #######################################################'
