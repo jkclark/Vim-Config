@@ -3,8 +3,8 @@ A script to configure my Vim environment, along with necessary files
 
 ## install.sh
 Even with comments, sometimes it's hard to understand what's going on in bash
-scripts, especially if you're new to bash/Vim. I know I had to spend some time figuring
-out what was goign on. Here's what's happening:
+scripts, especially if you're new to bash or Vim. I know I had to spend some time figuring
+out what was going on. Here's what's happening:
 
 1. Set a flag to force the script to exit immediately if it encounters an error.
 2. Create directories where files are going to be installed.
