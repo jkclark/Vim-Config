@@ -69,6 +69,7 @@ just the one that I prefer.
 + [fugitive.vim][fugitive.vim] is a Git wrapper for Vim.
 + [UltiSnips][UltiSnips] is a fast code snippet plugin for Vim.
 + [vim-go][vim-go] is a Go development plugin for Vim.
++ [vim-js-beautify][vim-js-beautify] formats javascript files by js-beautify.
 + [Syntastic][Syntastic] is a code syntax checking plugin for Vim.
 
 [Vundle]: https://github.com/VundleVim/Vundle.vim
@@ -84,4 +85,5 @@ just the one that I prefer.
 [fugitive.vim]: https://github.com/tpope/vim-fugitive
 [UltiSnips]: https://github.com/SirVer/ultisnips
 [vim-go]: https://github.com/fatih/vim-go
+[vim-js-beautify]: https://github.com/maksimr/vim-jsbeautify
 [Syntastic]: https://github.com/vim-syntastic/syntastic
