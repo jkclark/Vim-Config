@@ -4,7 +4,6 @@ filetype off							" required for Vundle
 
 """ The comments may not look like they line up. They are lined up on column
 """ 41 in my terminal when I load this file up in Vim. Not sure why this happens.
-
 " ### Settings ###
 set noshowmode							" never show mode
 set nowrap								" don't wrap lines
@@ -203,8 +202,6 @@ Plugin 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 Plugin 'davidhalter/jedi-vim'			" Enable for Python
 
-Plugin 'maksimr/vim-jsbeautify'
-
 " # Syntastic #
 Plugin 'vim-syntastic/syntastic'
 
@@ -217,6 +214,8 @@ let g:syntastic_enable_signs = 1
 let g:syntastic_go_checkers=["gofmt", "go", "golint", "govet"]
 let g:syntastic_python_checkers=['flake8']
 let g:syntastic_c_checkers=["gcc"]
+let g:syntastic_html_tidy_ignore_errors = [
+  \   'letter not allowed here' ] 
 " # End Syntastic #
 
 " All plugins must be added before the following line
