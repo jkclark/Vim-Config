@@ -202,6 +202,8 @@ Plugin 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 Plugin 'davidhalter/jedi-vim'			" Enable for Python
 
+Plugin 'pangloss/vim-javascript'
+
 " # Syntastic #
 Plugin 'vim-syntastic/syntastic'
 
