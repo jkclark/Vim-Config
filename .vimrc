@@ -204,6 +204,8 @@ Plugin 'davidhalter/jedi-vim'			" Enable for Python
 
 Plugin 'pangloss/vim-javascript'
 
+Plugin 'alvan/vim-closetag'
+
 " # Syntastic #
 Plugin 'vim-syntastic/syntastic'
 
@@ -218,6 +220,7 @@ let g:syntastic_python_checkers=['flake8']
 let g:syntastic_c_checkers=["gcc"]
 let g:syntastic_html_tidy_ignore_errors = [
   \   'letter not allowed here' ] 
+let g:syntastic_python_flake8_post_args='--ignore=E116,'
 " # End Syntastic #
 
 " All plugins must be added before the following line
