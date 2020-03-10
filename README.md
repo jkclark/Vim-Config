@@ -70,7 +70,7 @@ just the one that I prefer.
 + [UltiSnips][UltiSnips] is a fast code snippet plugin for Vim.
 + [vim-go][vim-go] is a Go development plugin for Vim.
 + [vim-js-beautify][vim-js-beautify] formats javascript files by js-beautify.
-+ [Syntastic][Syntastic] is a code syntax checking plugin for Vim.
++ [Syntastic][Syntastic] is a syntax-checking plugin for Vim.
 
 [Vundle]: https://github.com/VundleVim/Vundle.vim
 [Vim colorschemes]: https://github.com/flazz/vim-colorschemes
