@@ -8,10 +8,12 @@ set -e
 if [ ! -d "~/.vim" ]; then
 	mkdir ~/.vim
 fi
-if [ ! -d "/.vim/bundle" ]; then
+
+if [ ! -d "~/.vim/bundle" ]; then
 	mkdir ~/.vim/bundle
 fi
-if [ -d "/.vim/colors" ]; then
+
+if [ ! -d "~/.vim/colors" ]; then
 	mkdir ~/.vim/colors
 fi
 
