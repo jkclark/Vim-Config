@@ -15,7 +15,7 @@ out what was going on. Here's what's happening:
 7. Install fonts that have been patched and adjusted to work with the "Powerline" plugin.
    + At this point we follow the instructions from the Powerline plugin.
 8. Lastly, we remind ourselves that the fonts _are_ installed, but the symbols won't appear until
-	we select one in whatever terminal we are using.
+   we select one in whatever terminal we are using.
 
 ## colors
 I'm currently happy with Brogrammer, a colorscheme I was using when I coded with Sublime
