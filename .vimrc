@@ -92,7 +92,7 @@ set updatetime=1000
 set encoding=utf-8
 set nomodeline							" disable mode lines (security measure)
 set ruler								" show line and column in status bar
-set colorcolumn=80						" ruler at column 80
+set colorcolumn=110						" ruler at column 110
 set nocursorline						" don't highlight current line
 " toggle highlighting the cursor line
 nnoremap <leader>, :set cursorline!<cr>
