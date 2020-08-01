@@ -92,7 +92,7 @@ set updatetime=1000
 set encoding=utf-8
 set nomodeline							" disable mode lines (security measure)
 set ruler								" show line and column in status bar
-set colorcolumn=110						" ruler at column 110
+set colorcolumn=110						" ruler at column 80
 set nocursorline						" don't highlight current line
 " toggle highlighting the cursor line
 nnoremap <leader>, :set cursorline!<cr>
@@ -222,6 +222,8 @@ let g:syntastic_html_tidy_ignore_errors = [
   \   'letter not allowed here' ] 
 let g:syntastic_python_flake8_post_args='--ignore=E116,'
 " # End Syntastic #
+
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " All plugins must be added before the following line
 call vundle#end()						" required for Vundle
