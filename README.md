@@ -87,3 +87,5 @@ just the one that I prefer.
 [vim-go]: https://github.com/fatih/vim-go
 [vim-js-beautify]: https://github.com/maksimr/vim-jsbeautify
 [Syntastic]: https://github.com/vim-syntastic/syntastic
+
+(TODO: Add new plugins)
