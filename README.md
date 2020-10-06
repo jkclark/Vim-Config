@@ -11,7 +11,7 @@ out what was going on. Here's what's happening:
 3. Copy the colorscheme files (colors/\*.vim) to the colors directory we just made (~/.vim/colors).
 4. Install Vundle, the Vim package manager I like to use. We clone (copy) it from Github.
 5. Copy the contents of .vimrc (the configuration file where a lot of the magic happens) to its home (~/.vim).
-6. Open Vim, call ':PluginInstall', which installs all of our plugins, then quit Vim.
+6. Open Vim, call `:PluginInstall`, which installs all of our plugins, then quit Vim.
 7. Install fonts that have been patched and adjusted to work with the "Powerline" plugin.
    + At this point we follow the instructions from the Powerline plugin.
 8. Lastly, we remind ourselves that the fonts _are_ installed, but the symbols won't appear until
