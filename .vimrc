@@ -224,6 +224,7 @@ let g:syntastic_python_flake8_post_args='--ignore=E116,'
 " # End Syntastic #
 
 Plugin 'ctrlpvim/ctrlp.vim'
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 " All plugins must be added before the following line
 call vundle#end()						" required for Vundle
