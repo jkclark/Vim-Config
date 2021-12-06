@@ -1,6 +1,8 @@
 # Vim Config
 A script to configure my Vim environment, along with necessary files
 
+## TODO: Add steps for filetype.vim
+
 ## install.sh
 Even with comments, sometimes it's hard to understand what's going on in bash
 scripts, especially if you're new to bash or Vim. I know I had to spend some time figuring

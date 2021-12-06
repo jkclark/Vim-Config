@@ -26,7 +26,7 @@ set scrolloff=4							" keep 4 lines off the edges of the screen when scrolling
 set hlsearch							" highlight search terms
 set incsearch							" show search matches as you type
 set gdefault							" search/replace "globally" (on a line) by default
-set listchars=tab:»\ ,trail:·,extends:→,nbsp:· ",eol:↲	also this option for tab:▸
+set listchars=tab:»\ ,trail:·,extends:→,nbsp:· ",eol:↲ also this option for tab:▸
 set list								" show invisible characters by default,
 										" but it is enabled for some file types (see later)
 set pastetoggle=<F2>					" when in insert mode, press <F2> to go to
@@ -100,6 +100,9 @@ nnoremap <leader>, :set cursorline!<cr>
 " wrap lines for txt and md files specifically
 autocmd BufRead,BufNewFile *.txt setlocal wrap linebreak
 autocmd BufRead,BufNewFile *.md setlocal wrap linebreak
+
+autocmd Filetype javascript setlocal expandtab tabstop=2 shiftwidth=2
+
 " ### End Settings ###
 
 " ### Mappings ###
@@ -191,8 +194,8 @@ Plugin 'tpope/vim-fugitive'				" git wrapper
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-n>"
-let g:UltiSnipsJumpBackwardTrigger="<c-p>"
+" let g:UltiSnipsJumpForwardTrigger="<c-n>" " NOTE: This conflicts with NERDTree
+" let g:UltiSnipsJumpBackwardTrigger="<c-p>" " NOTE: This conflicts with fuzzy search
 
 Plugin 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " autocmd BufWritePre *.go call go#lint#Run() " run :GoLint on save
@@ -216,11 +219,11 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_enable_signs = 1
 
 let g:syntastic_go_checkers=["gofmt", "go", "golint", "govet"]
-let g:syntastic_python_checkers=['flake8']
+let g:syntastic_python_checkers=['pylint', 'mypy']
 let g:syntastic_c_checkers=["gcc"]
 let g:syntastic_html_tidy_ignore_errors = [
   \   'letter not allowed here' ] 
-let g:syntastic_python_flake8_post_args='--ignore=E116,'
+" let g:syntastic_python_flake8_post_args='--ignore=E116,'
 " # End Syntastic #
 
 Plugin 'ctrlpvim/ctrlp.vim'
