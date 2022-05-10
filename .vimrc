@@ -9,7 +9,7 @@ set noshowmode							" never show mode
 set nowrap								" don't wrap lines
 set tabstop=4							" a tab is four spaces
 set softtabstop=4						" when hitting <BS>, pretend like removing a tab, even if spaces
-set noexpandtab							" use tabs not spaces
+set expandtab							" use space chars not tabs
 set shiftwidth=4						" number of spaces to use for autoindenting
 set shiftround							" use multiple of shiftwidth when indenting with '<' and '>'
 set backspace=indent,eol,start			" allow backspacing over everything in insert mode
@@ -19,24 +19,24 @@ set number								" always show line numbers
 set showmatch							" set show matching parenthesis
 set ignorecase							" ignore case when searching
 set smartcase							" ignore case if search pattern is all lowercase,
-										"	 case-sensitive otherwise
+										  case-sensitive otherwise
 set smarttab							" insert tabs on the start of a line according to
-										"	 shiftwidth, not tabstop
+										" shiftwidth, not tabstop
 set scrolloff=4							" keep 4 lines off the edges of the screen when scrolling
 set hlsearch							" highlight search terms
 set incsearch							" show search matches as you type
 set gdefault							" search/replace "globally" (on a line) by default
-set listchars=tab:»\ ,trail:·,extends:→,nbsp:· ",eol:↲ also this option for tab:▸
+set listchars=tab:»\ ,trail:·,extends:→,nbsp:· ",eol:↲	also this option for tab:▸
 set list								" show invisible characters by default,
 										" but it is enabled for some file types (see later)
 set pastetoggle=<F2>					" when in insert mode, press <F2> to go to
-										"	 paste mode, where you can paste mass data
-										"	 that won't be autoindented
+										" paste mode, where you can paste mass data
+										" that won't be autoindented
 set mouse=a								" enable using the mouse if terminal emulator
-										"	 supports it (xterm does)
+										" supports it (xterm does)
 set fileformats="unix,dos,mac"
 set formatoptions+=1					" When wrapping paragraphs, don't end lines
-										"	 with 1-letter words (looks stupid)
+										" with 1-letter words (looks stupid)
 
 set shortmess+=I						" hide the launch screen
 set clipboard=unnamed					" normal OS clipboard interaction
@@ -75,10 +75,10 @@ endif
 set nobackup							" do not keep backup files
 set noswapfile							" do not write annoying intermediate swap files
 set directory=~/.vim/.tmp,~/tmp,/tmp	" store swap files in one of these places
-										"	 (in case they are ever turned on)
+										" (in case they are ever turned on)
 set viminfo='20,\"80					" read/write a .viminfo file
 										" don't store more than 80 lines of
-										"	 registers
+										" registers
 set wildmenu							" make tab completion for files act like bash
 set wildmode=list:full					" show a list when pressing tab and complete first full match
 set wildignore=*.swp,*.bak,*.pyc,*.class
@@ -86,13 +86,13 @@ set title								" change the terminal's title
 set visualbell							" don't beep
 set noerrorbells						" don't beep
 set showcmd								" show (partial) command in the last line of the screen
-										"	 this also shows visual selection
-										"	 info
+										" this also shows visual selection
+										" info
 set updatetime=1000
 set encoding=utf-8
 set nomodeline							" disable mode lines (security measure)
 set ruler								" show line and column in status bar
-set colorcolumn=110						" ruler at column 80
+set colorcolumn=110						" ruler at column 110
 set nocursorline						" don't highlight current line
 " toggle highlighting the cursor line
 nnoremap <leader>, :set cursorline!<cr>
@@ -101,7 +101,11 @@ nnoremap <leader>, :set cursorline!<cr>
 autocmd BufRead,BufNewFile *.txt setlocal wrap linebreak
 autocmd BufRead,BufNewFile *.md setlocal wrap linebreak
 
-autocmd Filetype javascript setlocal expandtab tabstop=2 shiftwidth=2
+" Disable Background Color Erase (BCE) so that color schemes
+" work properly when Vim is used inside tmux and GNU screen.
+if &term =~ '256color'
+	set t_ut=
+endif
 
 " ### End Settings ###
 
@@ -194,8 +198,8 @@ Plugin 'tpope/vim-fugitive'				" git wrapper
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 let g:UltiSnipsExpandTrigger="<tab>"
-" let g:UltiSnipsJumpForwardTrigger="<c-n>" " NOTE: This conflicts with NERDTree
-" let g:UltiSnipsJumpBackwardTrigger="<c-p>" " NOTE: This conflicts with fuzzy search
+let g:UltiSnipsJumpForwardTrigger="<c-n>"
+let g:UltiSnipsJumpBackwardTrigger="<c-p>"
 
 Plugin 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " autocmd BufWritePre *.go call go#lint#Run() " run :GoLint on save
@@ -219,14 +223,14 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_enable_signs = 1
 
 let g:syntastic_go_checkers=["gofmt", "go", "golint", "govet"]
-let g:syntastic_python_checkers=['pylint', 'mypy']
+let g:syntastic_python_checkers=['flake8']
 let g:syntastic_c_checkers=["gcc"]
 let g:syntastic_html_tidy_ignore_errors = [
   \   'letter not allowed here' ] 
-" let g:syntastic_python_flake8_post_args='--ignore=E116,'
+let g:syntastic_python_flake8_config_file='.flake8'
 " # End Syntastic #
 
-Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 " All plugins must be added before the following line
