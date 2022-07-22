@@ -19,7 +19,7 @@ set number								" always show line numbers
 set showmatch							" set show matching parenthesis
 set ignorecase							" ignore case when searching
 set smartcase							" ignore case if search pattern is all lowercase,
-										  case-sensitive otherwise
+										" case-sensitive otherwise
 set smarttab							" insert tabs on the start of a line according to
 										" shiftwidth, not tabstop
 set scrolloff=4							" keep 4 lines off the edges of the screen when scrolling
